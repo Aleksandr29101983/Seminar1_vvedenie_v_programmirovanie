@@ -57,16 +57,22 @@
 // Задача 8: Напишите программу, которая на вход принимает число (N),
 //           а на выходе показывает все четные числа от 1 до N
 
-// Console.Write("Enter number: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int temp = 2;
+Console.Write("Enter number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int temp = 2;
 
-// while (temp <= num)
-// {
-//     Console.WriteLine(temp);
-//     temp = temp + 2;
-// }
-
+if (num<2)
+{
+    Console.WriteLine($"The numbers {num} is not positive number or does not contain even numbers");
+}
+else
+{
+while (temp <= num)
+{
+    Console.WriteLine(temp);
+    temp = temp + 2;
+}
+}
 
 
 
